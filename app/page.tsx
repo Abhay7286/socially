@@ -1,3 +1,4 @@
+import ModeToggle from "@/components/ModeToggler";
 import { Button } from "@/components/ui/button";
 import {
   Show,
@@ -24,6 +25,7 @@ export default function Home() {
       <Show when="signed-in">
         <UserButton />
       </Show>
+      <ModeToggle />
     </>
   );
 }
