@@ -1,6 +1,10 @@
-import React from 'react'
+interface ImageUploadProps {
+  onChange: (url: string) => void;
+  value: string;
+  endpoint: "postImage";
+}
 
-function ImageUpload() {
+function ImageUpload({ endpoint, onChange, value }: ImageUploadProps) {
   return (
     <div>
       
